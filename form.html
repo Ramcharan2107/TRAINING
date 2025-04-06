@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration form
+        </title>
+    </head>
+
+    <body>
+        <table align="center"
+                cellspacing="10px"
+                cellpadding="10px"
+                style="border-collapse: collapse;text-align: center;border: 2px solid grey;">
+        <tr>
+            <td>Firstname:</td>
+            <td><input type="text" name="fname" placeholder="enter first name"> </td>
+        </tr>
+        <tr>
+            <td>Lastname:</td>
+            <td><input type="text" name="lname" placeholder="enter second name"> </td>
+        </tr>
+        <tr>
+            <td>Password:</td>    
+            <td><input type="password" name="password" placeholder="enter password"></td>
+        
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" placeholder="enter valid email"></td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="number" placeholder="enter valid number"></td>
+        </tr>
+        
+        <tr>
+            <td>Gender:</td>
+            <td> Male<input type="radio"  name="gender" value="male">
+                Female<input type="radio"  name="gender" value="female">
+                Others<input type="radio"  name="gender" value="Others">
+            </td>
+        </tr>
+        <tr>
+            <td>Language:       </td>
+            <td>Telugu<input type="checkbox" name="languages" value="Telugu">
+                Hindi<input type="checkbox" name="languages" value="hindi" >
+                English<input type="checkbox" name="languages" value="English">
+            </td>
+        </tr>
+        <tr>
+            <td>country:</td>
+            <td>
+            <select name="country" >
+                <option value="">--select county--</option>
+                <option value="ind">India</option>
+                <option value="Pak">Pakistan</option>
+                <option value="Us">United states</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>address:</td>
+            <td><textarea name="adress" rows="3" cols="3"></textarea></td>
+        </tr>
+        <tr colspan="2" style=> 
+            <td><input type="submit" value="register"></td>  
+        </tr>
+    </table>
+
+    </body>
+</html>
