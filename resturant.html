@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hungry Freakers</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <style>
+            .parent{
+                height: 120px;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                text-align: center;
+               <!--background-color: rgb(209, 196, 196);-->
+                
+            }
+            .logo{
+                display: flex;
+                padding-left: 10px;
+                
+            }
+            .name{
+                font-size: 30px;
+                align-content: center;
+                padding-left: 10px;
+                font-style:oblique;
+                font-weight: bold;
+                color: rgb(229, 135, 101);
+            }
+            .menu{
+                display: flex;
+                gap: 40px;
+                padding: 30px;
+                font-size: 20px;
+
+            }
+            a{
+    color: #6a4c50;
+    text-decoration: none;
+}
+a:hover{
+    color: #473234;
+}
+            .searchbar{
+                background-image: url(kitch.jpg);
+                height: 125px;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                }
+                
+            .searchbar__text{
+                color: #6a4c50;
+                display: flex;
+                gap: 20px;
+                height: 30px;
+                padding-left: 300px;
+                width: 50%;
+            }
+            .searchbar__search{
+                display: flex;
+                height: 30px;
+                padding-right: 500px;
+            }
+            .searchbar__search:hover{
+                color: #6a4c50;
+            }
+            .categories{
+                padding-top: 5px;
+                padding: 4px 0;
+            }
+            .header{
+                text-align: center;
+
+            }
+            .container{
+                align-content: space-between;
+                background-color: rgb(184, 140, 131);
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                gap: 10%;
+            }
+            .header{
+                margin: 30px;
+                color: #6a4c50;
+                font-size: 150%;
+                font-weight: bold;
+            }
+            .img-responsive{
+                margin-top: 50px;                
+                height: 300px;
+                width: 250px;
+                border-radius: 15px;
+            }
+            .float-text{
+                color: aliceblue;
+                font-size: 150%;
+                font-weight: bold;
+            }
+            .dd{
+                font-size: 180%;
+                padding: 10px; 
+                   
+                <!--justify-items: center;-->
+               
+            }
+            .container2{
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: #8a7878;
+                margin-top: 10px;
+                
+                
+            }
+            .food-menu-desc{
+                border: 2px solid grey;
+                border-radius: 10px;
+                width: 25%;
+                display: inline-block;
+                margin: 15px;
+                padding-bottom: 10px;
+                padding: 10px;
+                justify-items: center;
+                
+                background-color: white;
+               
+                
+
+            }
+            .btn{
+                border: 1px,solid gray;
+                border-radius: 5px;
+                background-color: peachpuff;
+            }
+            .head7{
+                font-size: 250%;
+                color: #453335;
+            }
+            .container3{
+                background-color: antiquewhite;
+                text-align: center;
+                justify-content: center;
+                padding: 20px;
+                margin-top: 20px;
+                font-size: 15PX;
+            }
+            .img{
+                display: inline-flex;
+                
+                margin: 20px;
+                padding: 30px;
+            }
+            
+            .img7{
+                border-radius: 20px;
+            }
+            
+            @media(max-width:600px) {
+                .parent{
+                    justify-content: center;
+                }
+                .menu{
+                    display: none;
+                }
+                .searchbar{
+                    justify-content: center;
+                    align-items: center;
+                }
+                .searchbar__text{
+                    align-items: center;
+                }
+                
+            }
+
+
+           
+        </style>
+
+    </head>
+
+    <body>
+       
+        <!--logo-->
+        <div class="parent">
+            <div class="logo"><img src="logo.png" height="100px" width="150px"> 
+                <div class="name">Hungry Freakers</div>
+            </div>
+                <div class="menu">
+                <a href="#"><i class="fa fa-home"></i>  Home</a>
+                <a href="#"><i class="fa fa-info"></i>   Catageroies</a>
+                <a href="#"><i class=""></i>Food</a>
+                <a href="#"><i class="fa fa-phone "></i>   Contact</a>
+            </div>
+        </div>
+
+        <!--search bar-->
+        <div class="searchbar">
+            <!--<div class="searchbar__img"><img src="food.jpeg" ></div>-->
+            <div class="searchbar__text">
+                <input type="searchbar__text" size="50"  placeholder="Search for food..." width="50%">
+                <div class="searchbar__search"><input type="submit" value="search"></div>
+            </div>
+        </div>
+
+        <!--FOOD ITEMS-->
+        <section class="categories">
+            <div class="header">
+                <h2>EXPLORE FOODS</h2>
+            </div>
+            
+            <div class="container">
+                <a href="#">
+                    <div class="food_biriyani">
+                        <img src="biriyani.jpeg" alt="Biriyani" class="img-responsive">
+                        <h3 class="float-text">Biriyani</h3>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="food_staters">
+                    <img src="staters1.jpg" alt="staters" class="img-responsive">
+                    <h3 class="float-text">Staters</h3>
+                </div></a>
+                <a href="#">
+                    <div class="food_deserts">
+                        <img src="desserts.jpeg" alt="Desserts" class="img-responsive">
+                        <h3 class="float-text">Desserts</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <marquee class="dd" behavior="slow" direction="left">
+            instant oders for your break-fast...,lunch...,dinner... oder lunch for your loved ones , hvae you missed dinner then oder here........ 
+        </marquee>
+
+        <!--food menu-->
+        <section class="container2">
+            <div class="food_menu">
+                <h2 class="head7">FOOD MENU</h2>
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="Hyderabadi-chicken-Biryani.jpg" width="100px" alt=""></div>
+                    <h4>chicken biriyani</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> oder now </a>
+                    
+                </div>
+
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="images.jpeg" width="100px" alt=""></div>
+                    <h4>gulab-jamun</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> oder now </a>
+                    
+                </div>
+
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="cool.jpeg" width="100px" alt=""></div>
+                    <h4>Cool-Drinks</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> oder now </a>
+                    
+                </div>
+
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="Hyderabadi-chicken-Biryani.jpg" width="100px" alt=""></div>
+                    <h4>chicken biriyani</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#" > Oder Now </a>
+                    
+                </div>
+
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="images.jpeg" width="100px" alt=""></div>
+                    <h4>french-fries</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> Oder Now </a>
+                    
+                </div>
+
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="cool.jpeg" width="100px" alt=""></div>
+                    <h4>Cool-cake</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> Oder Now </a>
+                    
+                </div>
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="Hyderabadi-chicken-Biryani.jpg" width="100px" alt=""></div>
+                    <h4>chicken biriyani</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> Oder Now </a>
+                    
+                </div>
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="images.jpeg" width="100px" alt=""></div>
+                    <h4>chicken-loli-pops</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> Oder Now </a>
+                    
+                </div>
+                <div class="food-menu-desc">
+                    <div class="img7"><img src="cool.jpeg" width="100px" alt=""></div>
+                    <h4>ice-cream</h4>
+                    <p class="food-price">$5.0</p>
+                    <p class="food-details">made with south indian spices,<br>and south indian special</p> <br>
+                    <a class="btn" href="#"> Oder Now </a>
+                    
+                </div>
+                
+                
+
+            </div>
+        </section>
+        <!--footer-->
+        <section>
+            <div class="container3">
+                <h2>CONTACT INFO</h2>
+                <p>Trade Name:Ram Charan Teja</p>
+                <p>Email Support:foodcourt2107@gmail.com</p>
+                <p>Customer Care Number : <br>
+                           +91 9**9*9***9 <br>
+                            +91 9*9*9*9*9*
+                </p>
+                <p>Customer Support Timmings : 10am to 11pm
+
+                </p>
+                <p>Address: <br>
+                            h-no:21/07,
+                        <br>KPHP colony,
+                    <br>Hyderabad.</p>
+                </textarea> <br>
+                <div class="img">
+                <a href="https://in.linkedin.com/"><img src="linkedin.png" width="150px" alt=""></a>
+            
+            
+                <a href="https://www.instagram.com/charan_xxo_/?utm_source=ig_web_button_share_sheet"><img src="insta2.avif" width="150px" alt=""></a>
+            </div>    
+                
+                <p>All rights reserved. Designed By Ram Charan</p>
+            </div>
+        </section>
+    </body>
+</html>
